@@ -13,16 +13,16 @@ def is_enabled(value, default):
 #---------------------------------------------------------------
 #---------------------------------------------------------------         ,
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '29560193'))
-API_HASH = environ.get('API_HASH', 'b15c2a72bdfa88427ef254e7583673aa')
+API_ID = int(environ.get('API_ID', '26395468'))
+API_HASH = environ.get('API_HASH', '680786593eb3e6b3195153f1ae9dd17e')
 BOT_TOKEN = environ.get('BOT_TOKEN', '')
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '763351261').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1740849725').split()]
 USERNAME = environ.get('USERNAME', "https://t.me/DOCTORx98") # ADMIN USERNAME
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002207168999'))
 MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/+aHR0iy2NeF8zZDN')
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002315350228').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002387771498').split()]
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 DATABASE_URI = environ.get('DATABASE_URI', "")
@@ -33,7 +33,7 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 #----------- There will be channel id add in all these ---------
 LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002479320078'))  # set shortner log channel
 DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS','-1002316873426')) # The movie you upload in it will be deleted from the bot.
-LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002049029967'))
+LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002361933973'))
 auth_channel = environ.get('AUTH_CHANNEL', '-1001947212847')
 SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-1002058160468'))
 request_channel = environ.get('REQUEST_CHANNEL', '-1002382703679') # If anyone sends a request message to your bot, you will get it in this channel.
