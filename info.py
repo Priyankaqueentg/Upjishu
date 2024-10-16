@@ -19,40 +19,40 @@ BOT_TOKEN = environ.get('BOT_TOKEN', '')
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1740849725').split()]
-USERNAME = environ.get('USERNAME', "https://t.me/DOCTORx98") # ADMIN USERNAME
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002207168999'))
-MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/+aHR0iy2NeF8zZDN')
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002387771498').split()]
+USERNAME = environ.get('USERNAME', "https://t.me/Anna_ownership") # ADMIN USERNAME
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002187008010'))
+MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/+qPUdMDsbMYsxYjU1')
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002416552124').split()]
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-DATABASE_URI = environ.get('DATABASE_URI', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://mrprabalkumar1441:<db_password>@cluster0.md6wf.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_NAME = environ.get('DATABASE_NAME', "cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 #----------- There will be channel id add in all these ---------
-LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002479320078'))  # set shortner log channel
-DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS','-1002316873426')) # The movie you upload in it will be deleted from the bot.
-LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002361933973'))
-auth_channel = environ.get('AUTH_CHANNEL', '-1001947212847')
-SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-1002058160468'))
-request_channel = environ.get('REQUEST_CHANNEL', '-1002382703679') # If anyone sends a request message to your bot, you will get it in this channel.
-MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1002197302739')) # 
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/Moviesfree4you_support') #Support group link ( make sure bot is admin )
+LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002428329929'))  # set shortner log channel
+DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS','-1002429671128')) # The movie you upload in it will be deleted from the bot.
+LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002387452184'))
+auth_channel = environ.get('AUTH_CHANNEL', '-1002411350015')
+SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-1002382879238'))
+request_channel = environ.get('REQUEST_CHANNEL', '-1002284288836') # If anyone sends a request message to your bot, you will get it in this channel.
+MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1002389347183')) # 
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/mybotssupportgroup') #Support group link ( make sure bot is admin )
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-IS_VERIFY = is_enabled('IS_VERIFY', True)
+IS_VERIFY = is_enabled('IS_VERIFY', False)
 #---------------------------------------------------------------
-TUTORIAL = environ.get("TUTORIAL", "https://t.me/A2BTutorial")
-TUTORIAL_2 = environ.get("TUTORIAL_2", "https://t.me/A2BTutorial")
-TUTORIAL_3 = environ.get("TUTORIAL_3", "https://t.me/A2BTutorial")
+TUTORIAL = environ.get("TUTORIAL", "https://t.me/anna_tutorial")
+TUTORIAL_2 = environ.get("TUTORIAL_2", "https://t.me/anna_tutorial")
+TUTORIAL_3 = environ.get("TUTORIAL_3", "https://t.me/anna_tutorial")
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://graph.org/file/1669ab9af68eaa62c3ca4.jpg")
-SHORTENER_API = environ.get("SHORTENER_API", "3163c0b1915f20ef3611fe5c09e449691d62b0fa")
-SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", 'urlshortx.com')
-SHORTENER_API2 = environ.get("SHORTENER_API2", "3163c0b1915f20ef3611fe5c09e449691d62b0fa")
-SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", 'urlshortx.com')
-SHORTENER_API3 = environ.get("SHORTENER_API3", "3163c0b1915f20ef3611fe5c09e449691d62b0fa")
-SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", 'urlshortx.com')
+SHORTENER_API = environ.get("SHORTENER_API", "")
+SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", '')
+SHORTENER_API2 = environ.get("SHORTENER_API2", "")
+SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", '')
+SHORTENER_API3 = environ.get("SHORTENER_API3", "")
+SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", '')
 TWO_VERIFY_GAP = int(environ.get('TWO_VERIFY_GAP', "14400"))
 THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "14400"))
 #---------------------------------------------------------------
